@@ -10,22 +10,21 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        tr.linha {
-            background-color: gray;
-        }
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;/*alinhamento vertical*/
         }
 
-        td.dado {
-            background-color: yellow;
+        .numero {
+            text-align: end;
         }
-
     </style>
 </head>
 <body>
@@ -45,19 +44,20 @@
             <td>b1</td>
             <td>c1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>a2</td>
             <td>b2</td>
-            <td>c2</td>
+            <td class="
+            numero">c2</td>
         </tr>
         <tr>
             <td>a3</td>
             <td>b3</td>
-            <td>c3</td>
+            <td class="numero">c3</td>
         </tr>
         <tr>
             <td>a4</td>
-            <td class="dado">b4</td>
+            <td>b4</td>
             <td>c4</td>
         </tr>
     </table>
